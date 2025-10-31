@@ -5,7 +5,7 @@
   "type": "indicator",
   "tier": "pro",
   "minNinjaTraderVersion": "8.0.0.0",
-  "downloadUrl": "https://github.com/badbuddhatrades/BadBuddhaVWAP/raw/refs/heads/main/BadBuddhaVWAP_PRO.zip",
+  "downloadUrl": "https://github.com/badbuddhatrades/BadBuddhaVWAP/raw/refs/heads/main/BadBuddhaVWAP_Pro.zip",
   "changelog": [
     {
       "version": "2.0.0",
