@@ -1,0 +1,134 @@
+{
+  "product": "BadBuddhaVWAP_Pro",
+  "version": "2.0.0",
+  "releaseDate": "2025-10-31",
+  "type": "indicator",
+  "tier": "pro",
+  "minNinjaTraderVersion": "8.0.0.0",
+  "downloadUrl": "https://github.com/badbuddhatrades/BadBuddhaVWAP/raw/refs/heads/main/BadBuddhaVWAP_PRO.zip",
+  "changelog": [
+    {
+      "version": "2.0.0",
+      "date": "2025-10-31",
+      "changes": [
+        "MAJOR: Version 2.0 professional architecture",
+        "Dedicated Pro codebase with all features unlocked",
+        "Streamlined license validation",
+        "All 9 plots included (VWAP + 8 bands)"
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2025-10-15",
+      "changes": [
+        "Initial Pro release",
+        "Volume Weighted Average Price with variance tracking",
+        "Standard deviation bands (0.5, 1.0, 1.5, 2.0 StdDev)",
+        "Multiple reset periods",
+        "SharpDX-based shaded band fills",
+        "Full visual customization",
+        "Professional-grade rendering"
+      ]
+    }
+  ],
+  "features": [
+    "Volume Weighted Average Price calculation with variance tracking",
+    "Standard deviation bands (4 levels: 0.5σ, 1.0σ, 1.5σ, 2.0σ)",
+    "Upper and lower bands for each StdDev level (8 plots total)",
+    "Toggle each band level independently",
+    "Shaded band fills using SharpDX hardware acceleration",
+    "Configurable opacity (0-100%) for band fills",
+    "Multiple reset periods: Session, Daily, Weekly, Monthly",
+    "Smart bar skipping after reset for clean gaps",
+    "Minimum bar requirements (3 bars for VWAP, 5 for bands)",
+    "VWAP line color and width customization",
+    "Band line color and width customization",
+    "Band fill color customization (separate from line color)",
+    "Automatic update checking",
+    "Professional appearance and performance",
+    "Strategy-ready with programmatic access to all plots",
+    "Institutional-grade VWAP analysis tool"
+  ],
+  "technicalDetails": {
+    "calculations": [
+      "VWAP = Σ(Typical Price × Volume) / Σ(Volume)",
+      "Variance = (Σ(TP² × Vol) / Σ(Vol)) - VWAP²",
+      "StdDev = √Variance",
+      "Bands = VWAP ± (Multiplier × StdDev)"
+    ],
+    "rendering": "SharpDX Direct2D with PathGeometry",
+    "plots": {
+      "count": 9,
+      "names": [
+        "VWAP (main line)",
+        "Upper05, Lower05 (0.5 StdDev)",
+        "Upper1, Lower1 (1.0 StdDev)",
+        "Upper15, Lower15 (1.5 StdDev)",
+        "Upper2, Lower2 (2.0 StdDev)"
+      ]
+    },
+    "resetPeriods": [
+      "Session: Traditional VWAP reset at session boundaries",
+      "Daily: Calendar day reset (24-hour)",
+      "Weekly: Week boundary reset (Monday)",
+      "Monthly: Month change reset"
+    ]
+  },
+  "useCases": [
+    "Professional day trading with institutional price levels",
+    "Mean reversion strategies using StdDev bands",
+    "Multi-timeframe analysis (Daily/Weekly/Monthly resets)",
+    "Options trading with volatility zones",
+    "Algorithmic trading with programmatic access",
+    "Probability analysis using 68% (1σ) and 95% (2σ) confidence levels"
+  ],
+  "requirements": {
+    "ninjatrader": "8.0.0.0",
+    "dotnet": "4.8",
+    "license": "Pro License (REQUIRED)"
+  },
+  "licensing": {
+    "model": "NinjaTrader Vendor License",
+    "type": "User-based license",
+    "validation": "Constructor validates license on load",
+    "failureBehavior": "Throws exception if license invalid",
+    "purchaseUrl": "https://badbuddhacustoms.com/vwap-pro",
+    "note": "Valid PRO license required. Indicator will not load without."
+  },
+  "installation": {
+    "steps": [
+      "IMPORTANT: Ensure you have Pro license activated",
+      "Download BadBuddhaVWAP_Pro.cs",
+      "Compile (F5)",
+      "If compilation fails, verify license is active",
+      "Add to chart from Indicators menu"
+    ]
+  },
+  "configuration": {
+    "dayTrading": {
+      "resetPeriod": "Session or Daily",
+      "bands": "Enable 1.0 and 2.0 StdDev",
+      "opacity": "10-20%",
+      "colors": "Contrasting colors for easy visibility"
+    },
+    "swingTrading": {
+      "resetPeriod": "Weekly or Monthly",
+      "bands": "Enable 1.5 and 2.0 StdDev",
+      "opacity": "15-25%",
+      "lineWidth": "3-4 for clarity"
+    },
+    "scalping": {
+      "resetPeriod": "Session",
+      "bands": "Enable 0.5 and 1.0 StdDev",
+      "opacity": "5-10% (light fills)",
+      "focus": "Quick mean reversion to VWAP"
+    }
+  },
+  "dependencies": [
+    "NinjaTrader.BadBuddhaCustoms.BadBuddhaUpdates (update service)",
+    "SharpDX.Direct2D1 (included with NinjaTrader)"
+  ],
+  "website": "https://badbuddhacustoms.com",
+  "support": "support@badbuddhacustoms.com",
+  "documentation": "https://badbuddhacustoms.com/docs/vwap-pro"
+}
