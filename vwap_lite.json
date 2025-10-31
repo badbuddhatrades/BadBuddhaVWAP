@@ -1,0 +1,47 @@
+{
+  "product": "BadBuddhaVWAP_Lite",
+  "version": "2.0.0",
+  "releaseDate": "2025-10-31",
+  "type": "indicator",
+  "tier": "lite",
+  "minNinjaTraderVersion": "8.0.0.0",
+  "downloadUrl": "https://github.com/badbuddhatrades/BadBuddhaVWAP/raw/refs/heads/main/BadBuddhaVWAP_Lite.zip",
+  "changelog": [
+    {
+      "version": "2.0.0",
+      "date": "2025-10-31",
+      "changes": [
+        "MAJOR: Version 2.0 architecture update",
+        "Cleaner, optimized codebase focused on core features",
+        "Streamlined UI with only relevant settings",
+        "Single VWAP plot for clear, simple visualization",
+        "Session-based reset period",
+        "Lightweight design",
+        "No license checks or conditional logic",
+        "Improved performance and reduced memory footprint"
+      ]
+    },
+    {
+      "version": "1.0.0",
+      "date": "2025-01-15",
+      "changes": [
+        "Initial release",
+        "Volume Weighted Average Price with session resets",
+        "Clean, efficient VWAP calculation",
+        "Automatic update checking",
+        "Purple VWAP line with customizable stroke"
+      ]
+    }
+  ],
+  "features": [
+    "Volume Weighted Average Price calculation",
+    "Automatic session-based resets",
+    "Single clean VWAP line overlay",
+    "VWAP color customization",
+    "Line width adjustment (1-10 pixels)",
+    "Automatic update checking",
+    "No license required (100% FREE)",
+    "Lightweight and fast",
+    "Perfect for beginners"
+  ]
+}
