@@ -81,7 +81,7 @@ Both versions feature clean code, automatic update alerts, and are optimized for
 2. Download `BadBuddhaVWAP_Pro.zip`
 3 . Open Tools -> Import -> NinjaScript Addon... -> find zip file, click ok.
 4. Add to chart via Indicators menu
-5. Message info@badbuddhacustoms.com with the email address associated with your NinjaTrader account.
+5. Message support@badbuddhacustoms.com with the email address associated with your NinjaTrader account.
 
 ---
 
