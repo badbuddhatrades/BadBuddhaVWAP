@@ -1,52 +1,8 @@
 {
-  "product": "BadBuddhaVWAP_Pro",
-  "version": "2.0.0",
-  "releaseDate": "2025-10-31",
+  "product": "BadBuddhaVWAP-Pro",
+  "version": "2.1.0.0",
+  "releaseDate": "2026-01-03",
   "type": "indicator",
   "tier": "pro",
-  "minNinjaTraderVersion": "8.0.0.0",
-  "downloadUrl": "https://github.com/badbuddhatrades/BadBuddhaVWAP/raw/refs/heads/main/BadBuddhaVWAP_Pro.zip",
-  "changelog": [
-    {
-      "version": "2.0.0",
-      "date": "2025-10-31",
-      "changes": [
-        "MAJOR: Version 2.0 professional architecture",
-        "Dedicated Pro codebase with all features unlocked",
-        "Streamlined license validation",
-        "All 9 plots included (VWAP + 8 bands)"
-      ]
-    },
-    {
-      "version": "1.0.0",
-      "date": "2025-10-15",
-      "changes": [
-        "Initial Pro release",
-        "Volume Weighted Average Price with variance tracking",
-        "Standard deviation bands (0.5, 1.0, 1.5, 2.0 StdDev)",
-        "Multiple reset periods",
-        "SharpDX-based shaded band fills",
-        "Full visual customization",
-        "Professional-grade rendering"
-      ]
-    }
-  ],
-  "features": [
-    "Volume Weighted Average Price calculation with variance tracking",
-    "Standard deviation bands (4 levels: 0.5σ, 1.0σ, 1.5σ, 2.0σ)",
-    "Upper and lower bands for each StdDev level (8 plots total)",
-    "Toggle each band level independently",
-    "Shaded band fills using SharpDX hardware acceleration",
-    "Configurable opacity (0-100%) for band fills",
-    "Multiple reset periods: Session, Daily, Weekly, Monthly",
-    "Smart bar skipping after reset for clean gaps",
-    "Minimum bar requirements (3 bars for VWAP, 5 for bands)",
-    "VWAP line color and width customization",
-    "Band line color and width customization",
-    "Band fill color customization (separate from line color)",
-    "Automatic update checking",
-    "Professional appearance and performance",
-    "Strategy-ready with programmatic access to all plots",
-    "Institutional-grade VWAP analysis tool"
-  ]
+  "downloadUrl": "https://ninjascript-downloads.badbuddhacustoms.workers.dev/download/BadBuddhaVWAP-Pro/2.1.0.0?source=update"
 }
